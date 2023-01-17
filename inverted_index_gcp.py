@@ -14,7 +14,7 @@ from collections import defaultdict
 from contextlib import closing
 from functools import reduce
 
-# Let's start with a small block size of 30 bytes just to test things out.
+
 BLOCK_SIZE = 1999998
 
 
@@ -89,8 +89,7 @@ class MultiFileReader:
 from collections import defaultdict
 from contextlib import closing
 
-TUPLE_SIZE = 6  # We're going to pack the doc_id and tf values in this
-# many bytes.
+TUPLE_SIZE = 6  # We're going to pack the doc_id and tf values in this many bytes.
 TF_MASK = 2 ** 16 - 1  # Masking the 16 low bits of an integer
 
 
